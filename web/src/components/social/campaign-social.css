@@ -1,0 +1,33 @@
+
+.cw_main_container .cw_footer .cw_footer_socialIcon{
+    background: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 22px 0 18px 0;
+    width: 100%;
+    float: none;
+}
+.cw_main_container .cw_footer .cw_footer_socialIcon li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding:0 10px;
+}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a{
+    width: 30px;
+    height: 30px;
+    padding:0;
+    display: flex;
+    float: left;
+    color: transparent;
+    overflow: hidden;
+    align-items: center;
+}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.facebook{background-image: url(../../images/svg/facebook.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.twitter{background-image: url(../../images/svg/twitter.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.linkedin{background-image: url(../../images/svg/linkedin.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.pinterest{background-image: url(../../images/svg/pinterest.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.youtube{background-image: url(../../images/svg/youtube.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.instagram{background-image: url(../../images/svg/instagram.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.whatsapp{background-image: url(../../images/svg/whatsapp.svg);}
+.cw_main_container .cw_footer .cw_footer_socialIcon li a.snapchat{background-image: url(../../images/svg/snapchat.svg);}

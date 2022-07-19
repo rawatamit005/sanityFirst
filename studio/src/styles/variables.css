@@ -1,0 +1,107 @@
+/*
+  Learn more:
+  https://www.sanity.io/guides/how-to-brand-your-studio
+*/
+
+/* Custom fonts */
+/*
+  @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+*/
+
+:root {
+  /* Brand colors */
+  /*
+  --brand-primary: var(--brand-primary);
+  --brand-primary--inverted: #ffffff;
+  --brand-secondary: #ffa800;
+  --brand-secondary--inverted: #3c1609;
+  */
+  /* Typography */
+  /*
+  --font-family-sans-serif: 'Nunito';
+  --font-size-base: 18px;
+  --text-color: var(--brand-secondary--inverted);
+  */
+  /* Main Navigation */
+  --main-navigation-color: 	#4169E1;
+  --main-navigation-color--inverted: 	#fff;
+}
+
+:global([class^='formView_root_']) {
+  max-width: 85%;
+}
+:global([class^='formView_root_'] .jEAqfz){
+  border-left:0;
+}
+:global([class^='ChangeBar_'] .hZDYBt) {
+  padding-bottom: 100px;
+}
+:global([class^='ChangeBar_'] .jRHHNP) {
+  padding-bottom: 100px;
+}
+:global([class^='Navbar_createButton_']) {
+  display: none;
+}
+:global([class^='formView_root_'] [class^='DefaultFormField_root_']){
+  max-width: 500px;
+}
+:global([class^='formView_root_'] [class^='tabs_content_object_']){
+  padding-bottom: 50px;
+  padding-left: 50px;
+  border-top: 0;
+  border-radius: 0;
+}
+:global([class^='DefaultPane_headerToolContainer_'] a[class^='DefaultButton_root_']){
+  background: #4169E1;
+  border: 1px solid #4169E1;
+  border-radius: 5px;
+  height: 33px;
+  color: #ffffff;
+}
+:global([class^='DefaultPane_headerToolContainer_'] a[class^='DefaultButton_root_'] [class^='DefaultButton_inner_']){
+  display: none;
+}
+:global([class^='DefaultPane_headerToolContainer_'] a[class^='DefaultButton_root_']:before){
+  content: "Create";
+  line-height: 29px;
+  text-align: center;
+  padding: 0 29px;
+}
+:global([class^='DefaultPane_headerToolContainer_'] a[class^='DefaultButton_root_'] svg){
+  display: none;
+}
+:global([class^='tabs_tab_headers_'] [class^='tabs_tab_inner_']){
+  font-weight: 500;
+}
+
+:global([data-testid~="document-panel-scroller"] div[data-ui="Container"]) {
+  max-width: 850px!important;
+}
+:global(div[data-testid='pane-header'] a[data-testid='action-intent-button']){
+  background: #4169E1;
+  border: 1px solid #4169E1;
+  border-radius: 5px;
+  height: 33px;
+  color: #ffffff;
+}
+:global(div[data-testid='pane-header'] a[data-testid='action-intent-button'] [class^='DefaultButton_inner_']){
+  display: none;
+}
+:global(div[data-testid='pane-header'] a[data-testid='action-intent-button']:before){
+  content: "Create";
+  line-height: 29px;
+  text-align: center;
+  padding: 0 29px;
+}
+:global(div[data-testid='pane-header'] a[data-testid='action-intent-button'] svg){
+  display: none;
+}
+:global(div[data-testid='pane-header'] a[data-testid='action-intent-button'] span){
+  display: none;
+}
+:global(button[data-testid='default-layout-global-create-button']){
+  display: none;
+}
+:global(a[data-ui='CollapseMenuButton']){
+  display: none;
+}

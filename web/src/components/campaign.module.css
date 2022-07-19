@@ -1,0 +1,98 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  -webkit-overflow-scrolling: touch;
+  font-family: Arial, sans-serif;
+  color: #000;
+  background: #fff;
+  font-size: 0.875rem;
+  margin: 0px;
+  padding: 0px;
+  min-height: 101vh;
+  overflow-y: scroll;
+  position: relative;
+}
+a {
+  color: #1d344c;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+a:hover {
+  color: #2181a0;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+picture {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(
+    1px 1px 1px 1px
+  ); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(
+    1px,
+    1px,
+    1px,
+    1px
+  ); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(
+    50%
+  ); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+.cw_main_container {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  float: left;
+}
+
+section {
+  display: block;
+  overflow: hidden;
+}
+
+.cw_banner {
+  width: 100%;
+  max-height: 700px;
+  display: block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.analytics {
+  visibility: hidden;
+}
+.cw_no_preview {
+  padding: 100px 0;
+}
+.cw_no_preview p {
+  margin: 0 auto;
+}
+.cw_no_preview a {
+  color: #2181a0;
+}

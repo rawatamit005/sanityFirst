@@ -1,0 +1,19 @@
+.cw_video_component{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.cw_video_component iframe{
+    height: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+    .cw_video_component iframe{
+        height: 450px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .cw_video_component iframe{
+        height: 550px;
+    }
+}

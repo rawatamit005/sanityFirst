@@ -1,0 +1,76 @@
+import React from "react"
+import PropTypes from "prop-types"
+
+export default function HTML(props) {
+  return (
+    <html {...props.htmlAttributes}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `var digitalData = {};
+                    digitalData.siteInfo={channel:"",sitetype:""},
+                    digitalData.page={pageInfo:{destinationURL:""},
+                    category:{pageType:""}},
+                    digitalData.video=[];
+                    digitalData.campaign=[];
+                    digitalData.product=[];
+                    digitalData.privacy={accessCategories:[{domains:[]}]},
+                    digitalData.component=[];
+                    digitalData.trackingInfo={GID:"",un:"",tool:[{ids:""}]},
+                    digitalData.promotion=[];
+                    digitalData.trackingInfo={},
+                    digitalData.trackingInfo.tool=[{}],
+                    digitalData.privacy={},
+                    digitalData.page.dmpattributes={},
+                    digitalData.privacy.accessCategories=[{}],
+                    digitalData.privacy.accessCategories[0].domains=[],
+                    digitalData.event=[],
+                    digitalData.sitespeed={},
+                    digitalData.page.entity={},
+                    digitalData.platform=[] ;
+                    digitalData.trackingInfo.tool[1]  = {};
+                    digitalData.product= [];
+                    var targetEnabled = true;(function(win, doc, style, timeout) { var STYLE_ID = 'at-body-style'; function getParent() { return doc.getElementsByTagName('head')[0]; } function addStyle(parent, id, def) { if (!parent) { return; } var style = doc.createElement('style'); style.id = id; style.innerHTML = def; parent.appendChild(style); } function removeStyle(parent, id) { if (!parent) { return; } var style = doc.getElementById(id); if (!style) { return; } parent.removeChild(style); } addStyle(getParent(), STYLE_ID, style); setTimeout(function() { removeStyle(getParent(), STYLE_ID); }, timeout); }(window, document, "body {opacity: 0 !important}", 3000));
+
+                    var launchCall = document.createElement('script');
+                    launchCall.src = "https://assets.adobedtm.com/e6bd1902389a/8de9a6a4bf99/launch-3783f09538ac.min.js";
+                    launchCall.async = "async";
+                    launchCall.id = "launch";
+                    launchCall.type = "text/javascript";
+                    document.getElementsByTagName("head")[0].appendChild(launchCall);
+          `,
+        }}
+        />,
+        <script src="https://assets.adobedtm.com/e6bd1902389a/8de9a6a4bf99/launch-3783f09538ac.min.js"></script>,
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        {props.headComponents}
+      </head>
+      <body {...props.bodyAttributes}>
+        {props.preBodyComponents}
+        <div
+          key={`body`}
+          id="___gatsby"
+          dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+        {props.postBodyComponents}
+      </body>
+    </html>
+  )
+}
+
+HTML.propTypes = {
+  htmlAttributes: PropTypes.object,
+  headComponents: PropTypes.array,
+  bodyAttributes: PropTypes.object,
+  preBodyComponents: PropTypes.array,
+  body: PropTypes.string,
+  postBodyComponents: PropTypes.array,
+}
+
+

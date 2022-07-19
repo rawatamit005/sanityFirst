@@ -1,0 +1,35 @@
+.componentWrapper p {
+  padding: 1em;
+}
+
+.iframeContainer iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.iframeContainer iframe .cw_main_container{
+  width:100%;
+  color:red;
+}
+
+.LinkClass{
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  width: 100%;
+}
+.LinkClass a{
+  color: #fff;
+  background: #4169E1;
+  padding: 8px 16px;
+  display: block;
+  float: right;
+  margin-right: 27px;
+  text-decoration: auto;
+  border-radius: 3px;
+  font-size: 12px;
+}

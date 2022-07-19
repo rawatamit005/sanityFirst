@@ -1,0 +1,58 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.root {
+  margin: 2em 0 4em;
+}
+.previewList {
+  @nest & h2 {
+    font-size: 1.5rem;
+    padding-left: 50px;
+    color: #1d344c;
+    text-transform: none;
+  }
+  @nest & li {
+    padding-left: 50px;
+  }
+}
+.headline {
+  font-size: var(--font-micro-size);
+  line-height: var(--font-micro-line-height);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
+}
+
+.grid {
+  border: 1px solid gray;
+  list-style: none;
+  margin: 0 50px;
+  padding: 25px;
+  width: 90%;
+  overflow: hidden;
+  @nest & li {
+    border-bottom: 1px solid #cfcccc;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 45%;
+    margin-right: 4%;
+    @nest & i {
+      float: left;
+      width: 15px;
+      height: 15px;
+      margin-top: 3px;
+      margin-right: 7px;
+    }
+    @nest & a {
+      float: left;
+      @nest & span {
+        color: #b5aaaa;
+      }
+    }
+  }
+}

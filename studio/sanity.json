@@ -1,0 +1,70 @@
+{
+  "root": true,
+  "project": {
+    "name": "Camp-Build"
+  },
+  "api": {
+    "projectId": "8gjfptsf",
+    "dataset": "production"
+
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "dashboard-widget-structure-menu",
+    "dashboard-widget-document-list",
+    "dashboard-widget-netlify",
+    "my-dashboard-widget",
+    "tab-asset-source",
+    "asset-source-url",
+    "@sanity/production-preview",
+    "tabs"
+  ],
+  "env": {
+    "development": {
+      "api": {
+        "dataset": "staging"
+      },
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./src/resolveProductionUrl.js"
+    },
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./src/styles/variables.css"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./src/structure/deskStructure.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./src/dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./parts/asset-sources.js"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./Logo/Logo.js"
+    },
+    {
+      "implements": "part:@sanity/base/document-actions/resolver",
+      "path": "./schemas/documentActions.js"
+    }
+  ]
+}

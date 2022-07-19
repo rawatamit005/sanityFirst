@@ -1,0 +1,38 @@
+.cw_main_container .cw_footer{background:none;}
+.cw_main_container .cw_footer .cw_footer_links{float: none;width: 100%;text-align: center;background: #f2f2f2; padding: 16px 10px; margin:0;}
+.cw_main_container .cw_footer .cw_footer_links li{display: inline-block;padding: 0 5px 0 5px;border-left: 1px solid #d1d1d1;margin: 0 0 6px;line-height: 16px; font-size: 0.813rem;}
+.cw_main_container .cw_footer .cw_footer_links li:first-child{border-left:none;}
+.cw_main_container .cw_footer .copyright{padding: 15px;margin: 0; font-size: 13px;font-weight: 300;color: #fff;float: none;vertical-align: middle;width: 100%;text-align: center; background-color: #363d48; overflow: hidden;}
+.cw_main_container .cw_footer .copyright a{display: block; width: fit-content; color: #fdfff5; margin: 0 auto;}
+.cw_main_container .cw_footer .copyright svg{height: 25px; vertical-align: middle;}
+.cw_main_container .cw_footer .copyright span{line-height: 27px; margin-left: 10px; vertical-align: middle;}
+.cw_main_container #goto_top{z-index: 999;display: none;position: fixed;right: 10px;bottom: 50px;width: 36px;height: 36px;border: none;background: #363d48;text-align: center;}
+.cw_main_container #goto_top span{position:absolute;top: -4px;left: 9px;color: #fff;text-align: center;font-size: 1.5rem;line-height: 36px;}
+.cw_main_container #goto_top:hover{background: #000;border: none;}
+
+.cw_main_container .cw_footer .cw_footer_links li button {
+    border: 1px solid #1d344c;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: #1d344c;
+    color: #fff;
+    border-radius: 4px;
+}
+.cw_main_container .cw_footer .cw_footer_links li .cw-ad-choices_link {
+    border: 1px solid #1d344c;
+    padding: 8px 20px 8px 30px;
+    cursor: pointer;
+    background: #1d344c;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.cw_main_container .cw_footer .cw_footer_links li .cw-ad-choices_link img{
+    position: absolute;
+    left: 13px;
+    top: 5px;
+}
+
+.copy_icon{display: inline-block; width: 12px; height: 12px; background: url(../../images/svg/copy_icon.svg) no-repeat; vertical-align: middle;float: left;
+    margin-right: 3px;}
